@@ -10,20 +10,30 @@
 <body>
     <div id="bg-main">
         <div id="container">
-            <img src="./images/illustration-sign-up-mobile.svg" alt="sign up illustration">
-            <div id="content">
-                <h2>Stay updated!</h2>
-                <p>Join 60,000+ product managers receiving monthly updates on:</p>
-                <ul>
-                    <li>Product discovery and building what matters</li>
-                    <li>Measuring to ensure updates are a success</li>
-                    <li>And much more!</li>
-                </ul>
-                <form action="" method="post" id="subscriptionForm">
-                    <label for="">Email address</label>
-                    <input type="email" name="" id="" placeholder="email@company.com">
-                    <button type="submit">Subscribe to monthly newsletter</button>
-                </form>
+            <div id="signUp">
+                <img src="./images/illustration-sign-up-mobile.svg" alt="sign up illustration">
+                <div id="content">
+                    <h2>Stay updated!</h2>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul>
+                        <li>Product discovery and building what matters</li>
+                        <li>Measuring to ensure updates are a success</li>
+                        <li>And much more!</li>
+                    </ul>
+                    <form action="" method="post" id="subscriptionForm">
+                        <label for="">Email address</label>
+                        <input type="email" name="" id="" placeholder="email@company.com">
+                        <button type="submit">Subscribe to monthly newsletter</button>
+                    </form>
+                </div>
+            </div>
+            <div id="successMessage">
+                <div id="successContainer">
+                    <img src="./images/icon-success.svg" alt="success icon">
+                    <h3>Thanks for subscribing!</h3>
+                    <p>A confirmation email has been sent to <span id="email">dummy@email.com</span>. Please open it and click the button inside to confirm your subscription</p>
+                </div>
+                <button id="dismissButton">Dismiss message</button>
             </div>
         </div>
     </div>
