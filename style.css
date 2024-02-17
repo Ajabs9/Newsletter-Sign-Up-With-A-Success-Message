@@ -53,9 +53,28 @@ p{
     margin-top: 5px;
 }
 
+#desktopImage{
+    display: none;
+}
+
+#signUp{
+    display: block;
+}
+
 #subscriptionForm{
     display: flex;
     flex-direction: column;
+}
+
+#emailLabels{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#errorMessage{
+    color: rgb(241, 77, 49);
+    display: none;
 }
 
 #subscriptionForm label{
@@ -75,13 +94,18 @@ p{
     color: #fff;
     background-color: hsl(234, 29%, 20%);
     border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+}
+
+#subscriptionForm button:active{
+    background-color: hsl(4, 100%, 67%);
 }
 
 #successMessage{
     height: 100vh;
     padding: 20px;
-    display: none !important;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -107,8 +131,59 @@ p{
     padding: 15px;
     border-radius: 5px;
     color: #fff;
+    cursor: pointer;
 }
 
 #dismissButton:active{
     background: hsl(4, 100%, 67%);
+}
+
+@media screen and (min-width: 760px) {
+    #mobileImage{
+        display: none;
+    }
+
+    #desktopImage{
+        display: block;
+    }
+
+    #signUp{
+        flex-direction: row;
+        height: 450px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    #signUp{
+        display: flex;
+    }
+
+    #mobileImage{
+        margin-left: 30px;
+    }
+
+    #container{
+        background-color: #fff;
+        max-width: 700px;
+        border-radius: 30px;
+    }
+
+    #bg-main{
+        background-color: hsl(234, 29%, 20%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #successMessage{
+        height: 430px;
+        width: 390px;
+        padding: 40px;
+    }
+
+    #successContainer{
+        margin: 0;
+    }
 }
